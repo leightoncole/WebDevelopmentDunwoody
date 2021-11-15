@@ -1,1 +1,212 @@
+/* I decided on these colors because they are the colors of the sports teams.*/
+/*black: #000000 | khaki: #f0e68c | grey: #808080 | gold: #ffd700 | red: #ff0000 | lightblue: #add8e6 
+| lime: #00ff00 | navy: #000080 | green: #008000 | blueviolet: #8a2be2 | royalblue: #4169e1*/
+/*These colors will be applied to each specific team's content. All content for each team will be presented in their team colors.*/
+/*I will be using Lucida Sans for my aside and section (content portion) of my site. 
+For all headers and p tags I will be using the default declaration.*/
+/*I plan to have some extra weight/underline in the headers on the main pages, as well as in the content headers in each page. 
+P tags will all be the same with nothing added to them*/
+html{
+  height:100%;
+}
+nav{
+  width: 100%;
+  position:fixed;
+  border:black 2px solid;
+  margin-top:20px;
+  right:0px;
+  font-style:normal;
+}
+/*font family declaration*/
+aside{
+  font-family:'Lucida Sans';
+}
+/*font family declaration*/
+section{
+  font-family:'Lucida Sans';
+}
+.navbar a{
+  text-decoration:none;
+  display:flex;
+  justify-content:center;
+  float:left;
+  width:25%;
+}
+#text{
+  text-decoration:underline;
+}
+a#wild{
+background-color:green;
+height:50px;
+font-weight:bold;
+color: khaki;
+line-height:50px;
+font-size: larger;
+}
+a#twins{
+background-color:red;
+height:50px;
+font-weight:bold;
+color: royalblue;
+line-height:50px;
+font-size: larger;
+}
+a#timberwolves{
+background-color: navy;
+height:50px;
+font-weight:bold;
+color:lime;
+line-height:50px;
+font-size: larger;
+}
+a#vikings{
+background-color: blueviolet;
+height:50px;
+font-weight:bold;
+color: gold;
+line-height:50px;
+font-size: larger;
+}
+.start h1{
+  text-align:center;
+  text-shadow: lightblue 3px 4px;
+  color: black;
+}
+#maintitle{
+  border-top:green dashed 5px;
+  border-bottom:red dashed 5px;
+  border-right:navy dashed 5px;
+  border-left:blueviolet dashed 5px;
+  margin-left:40%;
+  margin-right:40%;
+}
 
+.start{
+  background-color:grey;
+  width:100%;
+  height:154px;
+  position:fixed;
+  top:0;
+  left:0;
+  margin-top:0px;
+  float: clear;
+}
+main{
+  padding-top:150px;
+}
+main h1{
+text-align:left;
+font-size: 30px;
+}
+main h2{
+text-align:center;
+}
+main h3{
+  text-align:center;
+}
+.hockeyh3{
+  text-align:left;
+  color:khaki;
+}
+.wildart img{
+  height:25%;
+  width:25%;
+  float:left;
+  padding-right:10px;
+  border-radius:10px;
+}
+.wildart{
+  width:48%;
+  border:green dotted 5px;
+  display:flex;
+  float:left;
+}
+#wildtitle{
+  font-size:35px;
+  font-weight:bold;
+  color:khaki;
+}
+.vikingsart{
+  text-align:right;
+  margin-left:2%;
+  border: blueviolet dotted 5px;
+  float:right;
+  width:48%;
+  margin-bottom:36px;
+}
+#vikingstitle{
+  text-align:right;
+  font-size:35px;
+  font-weight:bold;
+  color:gold;
+}
+.vikingsart img{
+  height:25%;
+  width:25%;
+  float:right;
+  padding-left:10px;
+  border-radius:10px;
+}
+.footballh3{
+  text-align:right;
+  color:gold;
+}
+.wolvesart{
+  width:48%;
+  border:navy dotted 5px;
+  display:flex;
+  float:left;
+  margin-top:36px;
+}
+.basketballh3{
+  text-align:left;
+  color:lime;
+}
+#wolvestitle{
+  font-size:35px;
+  font-weight:bold;
+  color:Lime;
+}
+.wolvesart img{
+  width:35%;
+  height:35%;
+  float:left;
+  padding-right:10px;
+  border-radius:10px;
+}
+.twinsart{
+  text-align:right;
+  margin-left:2%;
+  border: red dotted 5px;
+  float:right;
+  width:48%;
+}
+#twinstitle{
+  text-align:right;
+  font-size:35px;
+  font-weight:bold;
+  color:royalblue;
+}
+.twinsart img{
+  height:25%;
+  width:25%;
+  float:right;
+  padding-left:10px;
+  border-radius:10px;
+}
+.baseballh3{
+  text-align:right;
+  color:royalblue;
+}
+
+.bthp{
+  display:flex;
+  background-color:white;
+  width:130px;
+  border-radius:5px;
+  float:right;
+}
+.bthp a{
+  color:black;
+  text-decoration:none;
+}
