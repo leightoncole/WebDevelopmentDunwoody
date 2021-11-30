@@ -1,212 +1,641 @@
-/* I decided on these colors because they are the colors of the sports teams.*/
-/*black: #000000 | khaki: #f0e68c | grey: #808080 | gold: #ffd700 | red: #ff0000 | lightblue: #add8e6 
-| lime: #00ff00 | navy: #000080 | green: #008000 | blueviolet: #8a2be2 | royalblue: #4169e1*/
-/*These colors will be applied to each specific team's content. All content for each team will be presented in their team colors.*/
-/*I will be using Lucida Sans for my aside and section (content portion) of my site. 
-For all headers and p tags I will be using the default declaration.*/
-/*I plan to have some extra weight/underline in the headers on the main pages, as well as in the content headers in each page. 
-P tags will all be the same with nothing added to them*/
 html{
-  height:100%;
-}
-nav{
-  width: 100%;
-  position:fixed;
-  border:black 2px solid;
-  margin-top:20px;
-  right:0px;
-  font-style:normal;
-}
-/*font family declaration*/
-aside{
-  font-family:'Lucida Sans';
-}
-/*font family declaration*/
-section{
-  font-family:'Lucida Sans';
-}
-.navbar a{
-  text-decoration:none;
-  display:flex;
-  justify-content:center;
-  float:left;
-  width:25%;
-}
-#text{
-  text-decoration:underline;
-}
-a#wild{
-background-color:green;
-height:50px;
-font-weight:bold;
-color: khaki;
-line-height:50px;
-font-size: larger;
-}
-a#twins{
-background-color:red;
-height:50px;
-font-weight:bold;
-color: royalblue;
-line-height:50px;
-font-size: larger;
-}
-a#timberwolves{
-background-color: navy;
-height:50px;
-font-weight:bold;
-color:lime;
-line-height:50px;
-font-size: larger;
-}
-a#vikings{
-background-color: blueviolet;
-height:50px;
-font-weight:bold;
-color: gold;
-line-height:50px;
-font-size: larger;
-}
-.start h1{
-  text-align:center;
-  text-shadow: lightblue 3px 4px;
-  color: black;
-}
-#maintitle{
-  border-top:green dashed 5px;
-  border-bottom:red dashed 5px;
-  border-right:navy dashed 5px;
-  border-left:blueviolet dashed 5px;
-  margin-left:40%;
-  margin-right:40%;
-}
-
-.start{
-  background-color:grey;
-  width:100%;
-  height:154px;
-  position:fixed;
-  top:0;
-  left:0;
-  margin-top:0px;
-  float: clear;
-}
-main{
-  padding-top:150px;
-}
-main h1{
-text-align:left;
-font-size: 30px;
-}
-main h2{
-text-align:center;
-}
-main h3{
-  text-align:center;
-}
-.hockeyh3{
-  text-align:left;
-  color:khaki;
-}
-.wildart img{
-  height:25%;
-  width:25%;
-  float:left;
-  padding-right:10px;
-  border-radius:10px;
-}
-.wildart{
-  width:48%;
-  border:green dotted 5px;
-  display:flex;
-  float:left;
-}
-#wildtitle{
-  font-size:35px;
+    height:100%;
+  }
+  nav{
+    width: 100%;
+    position:fixed;
+    border:black 2px solid;
+    margin-top:20px;
+    right:0px;
+    font-style:normal;
+  }
+  aside{
+    font-family:'Lucida Sans';
+  }
+  section{
+    font-family:'Lucida Sans';
+  }
+  body{
+    background-image:url("Images/mnlake.jpg");
+    height:100%;
+  }
+  .navbar a{
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    float:left;
+    width:25%;
+  }
+  #text{
+    text-decoration:underline;
+  }
+  a#wild{
+  background-color:green;
+  height:50px;
   font-weight:bold;
-  color:khaki;
-}
-.vikingsart{
-  text-align:right;
-  margin-left:2%;
-  border: blueviolet dotted 5px;
-  float:right;
-  width:48%;
-  margin-bottom:36px;
-}
-#vikingstitle{
-  text-align:right;
-  font-size:35px;
+  color: khaki;
+  line-height:50px;
+  font-size: larger;
+  }
+  a#twins{
+  background-color:red;
+  height:50px;
   font-weight:bold;
-  color:gold;
-}
-.vikingsart img{
-  height:25%;
-  width:25%;
-  float:right;
-  padding-left:10px;
-  border-radius:10px;
-}
-.footballh3{
-  text-align:right;
-  color:gold;
-}
-.wolvesart{
-  width:48%;
-  border:navy dotted 5px;
-  display:flex;
-  float:left;
-  margin-top:36px;
-}
-.basketballh3{
-  text-align:left;
+  color: royalblue;
+  line-height:50px;
+  font-size: larger;
+  }
+  a#timberwolves{
+  background-color: navy;
+  height:50px;
+  font-weight:bold;
   color:lime;
-}
-#wolvestitle{
-  font-size:35px;
+  line-height:50px;
+  font-size: larger;
+  }
+  a#vikings{
+  background-color: blueviolet;
+  height:50px;
   font-weight:bold;
-  color:Lime;
-}
-.wolvesart img{
-  width:35%;
-  height:35%;
-  float:left;
-  padding-right:10px;
-  border-radius:10px;
-}
-.twinsart{
-  text-align:right;
-  margin-left:2%;
-  border: red dotted 5px;
-  float:right;
-  width:48%;
-}
-#twinstitle{
-  text-align:right;
-  font-size:35px;
-  font-weight:bold;
-  color:royalblue;
-}
-.twinsart img{
-  height:25%;
-  width:25%;
-  float:right;
-  padding-left:10px;
-  border-radius:10px;
-}
-.baseballh3{
-  text-align:right;
-  color:royalblue;
-}
+  color: gold;
+  line-height:50px;
+  font-size: larger;
+  }
+  .start h1{
+    text-align:center;
+    text-shadow: lightblue 3px 4px;
+    color: black;
+  }
+  #maintitle{
+    border-top:green dashed 5px;
+    border-bottom:red dashed 5px;
+    border-right:navy dashed 5px;
+    border-left:blueviolet dashed 5px;
+    margin-left:40%;
+    margin-right:40%;
+  }
+  #wildheader{
+    color:green;
+    text-shadow:khaki 3px 4px;
+    border: red dashed 5px;
+    border-radius:5px;
+    margin-right:43%;
+    margin-left: 43%;
+  }
+  #twinsheader{
+    color:red;
+    text-shadow:royalblue 3px 4px;
+    border: floralwhite dashed 5px;
+    border-radius:5px;
+    margin-right:42%;
+    margin-left: 42%;
+  }
+  #wolvesheader{
+    color:navy;
+    text-shadow:lime 3px 4px;
+    border: cornflowerblue dashed 5px;
+    border-radius:5px;
+    margin-right:37%;
+    margin-left: 37%;
+  }
+  #vikingsheader{
+    color:blueviolet;
+    text-shadow:gold 3px 4px;
+    border: ghostwhite dashed 5px;
+    border-radius:5px;
+    margin-right:41%;
+    margin-left: 41%;
+  }
+  img#green{
+    height:70px;
+    width: 70px;
+    float:left;
+    border-top:green solid 5px;
+    border-bottom: red solid 5px;
+    border-right: navy solid 5px;
+    border-left: blueviolet solid 5px;
+    border-radius:7px;
+  }
+  img#mn{
+    height:70px;
+    width: 70px;
+    float:right;
+    border-top:green solid 5px;
+    border-bottom: red solid 5px;
+    border-right: navy solid 5px;
+    border-left:blueviolet solid 5px;
+    border-radius:7px;
+  }
+  .start{
+    background-color:grey;
+    width:100%;
+    height:154px;
+    position:fixed;
+    top:0;
+    left:0;
+    margin-top:0px;
+    float: clear;
+  }
+  main{
+    padding-top:150px;
+  }
+  main h1{
+  text-align:left;
+  font-size: 30px;
+  }
+  main h2{
+  text-align:center;
+  }
+  main h3{
+    text-align:center;
+  }
+  .hockeyh3{
+    text-align:left;
+    color:khaki;
+  }
+  .wildart img{
+    height:25%;
+    width:25%;
+    float:left;
+    padding-right:10px;
+    border-radius:10px;
+  }
+  .wildart{
+    width:48%;
+    border:green dotted 5px;
+    display:flex;
+    float:left;
+  }
+  #wildtitle{
+    font-size:35px;
+    font-weight:bold;
+    color:khaki;
+  }
+  .wildp{
+    background-color:red;
+    border-radius:10px;
+  }
+  .vikingsart{
+    text-align:right;
+    margin-left:2%;
+    border: blueviolet dotted 5px;
+    float:right;
+    width:48%;
+    margin-bottom:36px;
+  }
+  #vikingstitle{
+    text-align:right;
+    font-size:35px;
+    font-weight:bold;
+    color:gold;
+  }
+  .vikingsart img{
+    height:25%;
+    width:25%;
+    float:right;
+    padding-left:10px;
+    border-radius:10px;
+  }
+  .footballh3{
+    text-align:right;
+    color:gold;
+  }
+  .vikingsp{
+    background-color:ghostwhite;
+    border-radius:10px;
+  }
+  
+  .wolvesart{
+    width:48%;
+    border:navy dotted 5px;
+    display:flex;
+    float:right;
+    text-align:right;
+    
+  }
+  .basketballh3{
+    text-align:right;
+    color:lime;
+  }
+  #wolvestitle{
+    font-size:35px;
+    font-weight:bold;
+    color:Lime;
+  }
+  .wolvesart img{
+    width:35%;
+    height:43.5%;
+    float:right;
+    padding-left:10px;
+    border-radius:10px;
+  }
+  .wolvesp{
+    background-color:cornflowerblue;
+    border-radius:10px;
+  }
+  .twinsart{
+    text-align:left;
+    margin-right:2%;
+    border: red dotted 5px;
+    float:left;
+    width:48%;
+    margin-top:36px;
+  }
+  #twinstitle{
+    text-align:left;
+    font-size:35px;
+    font-weight:bold;
+    color:royalblue;
+  }
+  .twinsart img{
+    height:25%;
+    width:25%;
+    float:left;
+    padding-right:10px;
+    border-radius:10px;
+  }
+  .baseballh3{
+    text-align:left;
+    color:royalblue;
+  }
+  .twinsp{
+    background-color: floralwhite;
+    border-radius:10px;
+  }
+  
+  
+  
+  .twinsrosterart{
+    text-align:right;
+    margin-left:2%;
+    border: red dashed 5px;
+    float:right;
+    width:48%;
+  }
+  .twinsrosterart img{
+    height:40%;
+    width:40%;
+    float:right;
+    padding-left:px;
+    border-radius:10px;
+  }
+  .baseballpgh3{
+    text-align:center;
+    color:royalblue;
+  }
+  .twinsrosterp{
+    background-color: floralwhite;
+    border-radius:10px;
+    text-align:center;
+  }
+  .twinsstadiumart{
+    text-align:left;
+    margin-right:0%;
+    border: red dashed 5px;
+    float:left;
+    width:48%;
+  }
+  .twinsstadiumart img{
+    height:40%;
+    width:40%;
+    float:left;
+    padding-right:10px;
+    border-radius:10px;
+  }
+  .baseballpgh3{
+    text-align:center;
+    color:royalblue;
+  }
+  .twinsstadiump{
+    background-color: floralwhite;
+    border-radius:10px;
+    text-align:center;
+  }
+  .twinschampsart{
+    text-align:right;
+    margin-left:2%;
+    border: red dashed 5px;
+    float:right;
+    width:48%;
+    margin-top:36px;
+  }
+  .twinschampsart img{
+    height:40%;
+    width:40%;
+    float:left;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .twinschampsart img#one{
+    height:205px;
+    width:40%;
+    float:right;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .baseballpgh3{
+    text-align:center;
+    color:royalblue;
+  }
+  .twinschampsp{
+    background-color: floralwhite;
+    border-radius:10px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .twinsmomentart{
+    text-align:left;
+    margin-right:0%;
+    border: red dashed 5px;
+    float:left;
+    width:48%;
+    margin-top:36px;
+  }
+  .baseballpgh3{
+    text-align:center;
+    color:royalblue;
+  }
+  .twinsmomentart iframe{
+    background-color: floralwhite;
+    border-radius:10px;
+    width:350px;
+    height:250px;
+    margin-left:20%;
+  }
+  
+  
+  
+  .twolvesrosterart{
+    text-align:right;
+    margin-left:2%;
+    border: navy dashed 5px;
+    float:right;
+    width:48%;
+  }
+  .twolvesrosterart img{
+    height:40%;
+    width:40%;
+    float:right;
+    padding-left:px;
+    border-radius:10px;
+  }
+  .basketballpgh3{
+    text-align:center;
+    color:lime;
+  }
+  .twolvesrosterp{
+    background-color: cornflowerblue;
+    border-radius:10px;
+    text-align:center;
+  }
+  .twolvesstadiumart{
+    text-align:left;
+    margin-right:0%;
+    border: navy dashed 5px;
+    float:left;
+    width:48%;
+  }
+  .twolvesstadiumart img{
+    height:40%;
+    width:40%;
+    float:left;
+    padding-right:10px;
+    border-radius:10px;
+  }
+  .twolvesstadiump{
+    background-color: cornflowerblue;
+    border-radius:10px;
+    text-align:center;
+  }
+  .twolveschampsart{
+    text-align:right;
+    margin-left:2%;
+    border: navy dashed 5px;
+    float:right;
+    width:48%;
+    margin-top:36px;
+  }
+  .twolveschampsart img{
+    height:40%;
+    width:40%;
+    float:right;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .twolveschampsart img#one{
+    height:205px;
+    width:40%;
+    float:right;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .twolveschampsp{
+    background-color: cornflowerblue;
+    border-radius:10px;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .twolvesmomentart{
+    text-align:left;
+    margin-right:0%;
+    border: navy dashed 5px;
+    float:left;
+    width:48%;
+    margin-top:36px;
+  }
+  .twolvesmomentart iframe{
+    background-color: cornflowerblue;
+    border-radius:10px;
+    width:350px;
+    height:250px;
+    margin-left:25%;
+  }
+  
+  
+  .wildrosterart{
+    text-align:right;
+    margin-left:2%;
+    border: green dashed 5px;
+    float:right;
+    width:48%;
+  }
+  .wildrosterart img{
+    height:42.5%;
+    width:42.5%;
+    float:right;
+    padding-left:px;
+    border-radius:10px;
+  }
+  .hockeypgh3{
+    text-align:center;
+    color:cornsilk;
+  }
+  .wildrosterp{
+    background-color: red;
+    border-radius:10px;
+    text-align:center;
+  }
+  .wildstadiumart{
+    text-align:left;
+    margin-right:0%;
+    border: green dashed 5px;
+    float:left;
+    width:48%;
+  }
+  .wildstadiumart img{
+    height:40%;
+    width:40%;
+    float:left;
+    padding-right:10px;
+    border-radius:10px;
+  }
+  .wildstadiump{
+    background-color: red;
+    border-radius:10px;
+    text-align:center;
+  }
+  .wildchampsart{
+    text-align:right;
+    margin-left:2%;
+    border: green dashed 5px;
+    float:right;
+    width:48%;
+    margin-top:36px;
+  }
+  .wildchampsart img{
+    height:30%;
+    width:30%;
+    float:right;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .wildchampsp{
+    background-color: red;
+    border-radius:10px;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .wildmomentart{
+    text-align:left;
+    margin-right:0%;
+    border: green dashed 5px;
+    float:left;
+    width:48%;
+    margin-top:36px;
+  }
+  .wildmomentart img{
+    background-color: red;
+    border-radius:10px;
+    width:50%;
+    height:50%;
+    margin-left:25%;
+  }
+  
+  
+  .vikingsrosterart{
+    text-align:right;
+    margin-left:2%;
+    border: blueviolet dashed 5px;
+    float:right;
+    width:48%;
+  }
+  .vikingsrosterart img{
+    height:40%;
+    width:40%;
+    float:right;
+    padding-left:px;
+    border-radius:10px;
+  }
+  .footballpgh3{
+    text-align:center;
+    color:gold;
+  }
+  .vikingsrosterp{
+    background-color: ghostwhite;
+    border-radius:10px;
+    text-align:center;
+  }
+  .vikingsstadiumart{
+    text-align:left;
+    margin-right:0%;
+    border: blueviolet dashed 5px;
+    float:left;
+    width:48%;
+  }
+  .vikingsstadiumart img{
+    height:40%;
+    width:40%;
+    float:left;
+    padding-right:10px;
+    border-radius:10px;
+  }
+  .vikingsstadiump{
+    background-color: ghostwhite;
+    border-radius:10px;
+    text-align:center;
+  }
+  .vikingschampsart{
+    text-align:right;
+    margin-left:2%;
+    border: blueviolet dashed 5px;
+    float:right;
+    width:48%;
+    margin-top:36px;
+  }
+  .vikingschampsart img{
+    height:20%;
+    width:20%;
+    float:right;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .vikingschampsart img#one{
+    height:205px;
+    width:40%;
+    float:right;
+    padding-left:0px;
+    border-radius:10px;
+  }
+  .vikingschampsp{
+    background-color: ghostwhite;
+    border-radius:10px;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .vikingsmomentart{
+    text-align:left;
+    margin-right:0%;
+    border: blueviolet dashed 5px;
+    float:left;
+    width:48%;
+    margin-top:36px;
+  }
+  .vikingsmomentart img{
+    background-color: ghostwhite;
+    border-radius:10px;
+    width:350px;
+    height:250px;
+    margin-left:25%;
+  }
+  
+  
+  .bthp{
+    display:flex;
+    background-color:white;
+    width:130px;
+    border-radius:5px;
+    float:right;
+  }
+  .bthp a{
+    color:black;
+    text-decoration:none;
+  }
 
-.bthp{
-  display:flex;
-  background-color:white;
-  width:130px;
-  border-radius:5px;
-  float:right;
-}
-.bthp a{
-  color:black;
-  text-decoration:none;
-}
+  img#wildpic{
+      width: 36%;
+      height: 36%;
+  }
